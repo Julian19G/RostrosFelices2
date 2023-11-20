@@ -9,6 +9,8 @@ namespace RostrosFelices.Models
     internal class Cliente
     {
         public int Id { get; set; }
-        public string Name { get; set; }  
+        public string Name { get; set; }
+
+        public ICollection<Servicio> Servicios { get; set; }
     }
 }
